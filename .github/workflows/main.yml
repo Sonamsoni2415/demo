@@ -21,7 +21,7 @@ jobs:
     #   uses: docker/build-push-action@v2
     #   with:
     #     push: true
-    #     tags: ${{ secrets.AZURE_REGISTRY_NAME }}.azurecr.io/sampleapp:V2
+    #     tags: ${{ secrets.AZURE_REGISTRY_NAME }}.azurecr.io/sampleappl:V2
     #     file: Dockerfile
     - run: |
         docker login -u ${{ secrets.AZURE_ROLE_USER }} -p ${{ secrets.AZURE_ROLE_PASSWORD }} ${{ secrets.AZURE_REGISTRY_NAME }}.azurecr.io
