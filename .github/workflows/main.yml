@@ -25,5 +25,5 @@ jobs:
     #     file: Dockerfile
     - run: |
         echo "${{ secrets.AZURE_ROLE_PASSWORD }}"| docker login -u ${{ secrets.AZURE_ROLE_USER }} --password-stdin ${{ secrets.AZURE_REGISTRY_NAME }}.azurecr.io
-        docker build . -t ${{ secrets.AZURE_REGISTRY_NAME }}.azurecr.io/sampleapp:V1
-        docker push ${{ secrets.AZURE_REGISTRY_NAME }}.azurecr.io/sampleapp:V1
+        docker build . -t ${{ secrets.AZURE_REGISTRY_NAME }}.azurecr.io/sampleapp:V2
+        docker push ${{ secrets.AZURE_REGISTRY_NAME }}.azurecr.io/sampleapp:V2
